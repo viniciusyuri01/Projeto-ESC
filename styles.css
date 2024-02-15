@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Protest Riot", sans-serif
 }
 
 html {
@@ -59,7 +61,7 @@ header ul li {
 
 .btn-Cadastrar button {
     width: 120px;
-    height: 40px;
+    height: 38px;
     border: 0;
     background-color: #ffff;
     cursor: pointer;
@@ -71,11 +73,41 @@ header ul li a {
     color: #ffffff;
     text-decoration: none;
 }
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 
 .banner {
     height: 100vh;
     background-image: url(img/DJI_0353.jpg);
-    background-position: center;
+    background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1{
+    font-size: 138px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffffff, #ffff00, #ff0000, #e4e4e4 );
+    background-size: 400% 100%;
+    border-color: blue;
+    animation: degrade 20s ease-in-out infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
